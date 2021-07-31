@@ -8,6 +8,7 @@ import java.util.logging.Logger;
 import net.md_5.bungee.api.event.AsyncEvent;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.event.EventBus;
+import net.md_5.bungee.event.EventExceptionHandler;
 
 public class ModifiedPluginEventBus extends EventBus {
 
@@ -29,13 +30,14 @@ public class ModifiedPluginEventBus extends EventBus {
 	}
 
 	@Override
-	public void post(Object event) {
+	public <T> void post(T event, EventExceptionHandler<T> exceptionHandler) {
 		if (event instanceof AsyncEvent) {
 			synchronized (uncompletedEvents) {
 				uncompletedEvents.add((AsyncEvent<?>) event);
 			}
 		}
-		super.post(event);
+
+		super.post(event, exceptionHandler);
 	}
 
 }

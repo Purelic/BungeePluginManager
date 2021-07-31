@@ -35,13 +35,12 @@ sourceSets {
 repositories {
 	mavenCentral()
 	maven {
-		url 'https://oss.sonatype.org/content/repositories/snapshots'
+		url 'https://papermc.io/repo/repository/maven-public/'
 	}
 }
 
-
 dependencies {
-	compileOnly group: 'net.md-5', name: 'bungeecord-api', version: '1.15-SNAPSHOT'
+	compileOnly group: 'io.github.waterfallmc', name: 'waterfall-api', version: '1.17-R0.1-SNAPSHOT'
 	compileOnly group: 'org.yaml', name: 'snakeyaml', version: '1.26'
 }
 
