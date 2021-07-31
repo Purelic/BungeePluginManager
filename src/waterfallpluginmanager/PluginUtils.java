@@ -1,4 +1,4 @@
-package bungeepluginmanager;
+package waterfallpluginmanager;
 
 import java.io.File;
 import java.io.InputStream;
@@ -182,7 +182,7 @@ public class PluginUtils {
 	}
 
 	private static Plugin createPluginInstance(ProxyServer proxy, File pluginFile, PluginDescription pluginDescription) throws InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, MalformedURLException, NoSuchMethodException, SecurityException, ClassNotFoundException {
-		Class<?> pluginClassLoaderClass = BungeePluginManager.class.getClassLoader().getClass();
+		Class<?> pluginClassLoaderClass = WaterfallPluginManager.class.getClassLoader().getClass();
 		ClassLoader pluginClassLoader = null;
 		for (Constructor<?> constructor : pluginClassLoaderClass.getDeclaredConstructors()) {
 			ReflectionUtils.setAccessible(constructor);

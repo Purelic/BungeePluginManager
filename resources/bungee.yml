@@ -1,4 +1,4 @@
-name: BungeePluginManager
-main: bungeepluginmanager.BungeePluginManager
+name: WaterfallPluginManager
+main: waterfallpluginmanager.WaterfallPluginManager
 version: 2.1
 author: _Shevchik_

@@ -1,10 +1,10 @@
-package bungeepluginmanager;
+package waterfallpluginmanager;
 
 import java.util.logging.Level;
 
 import net.md_5.bungee.api.plugin.Plugin;
 
-public class BungeePluginManager extends Plugin {
+public class WaterfallPluginManager extends Plugin {
 
 	@Override
 	public void onLoad() {

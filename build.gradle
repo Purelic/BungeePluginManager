@@ -7,7 +7,7 @@ plugins {
 defaultTasks 'build'
 
 
-group 'bungeepluginmanager'
+group 'waterfallpluginmanager'
 version '2.1'
 sourceCompatibility = JavaVersion.VERSION_1_8
 

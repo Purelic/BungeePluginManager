@@ -1,4 +1,4 @@
-package bungeepluginmanager;
+package waterfallpluginmanager;
 
 import java.util.Collections;
 import java.util.Set;

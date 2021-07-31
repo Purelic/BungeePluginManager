@@ -1,4 +1,4 @@
-package bungeepluginmanager;
+package waterfallpluginmanager;
 
 import java.lang.reflect.AccessibleObject;
 import java.lang.reflect.Field;

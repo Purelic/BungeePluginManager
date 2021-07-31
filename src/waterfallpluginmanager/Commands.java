@@ -1,4 +1,4 @@
-package bungeepluginmanager;
+package waterfallpluginmanager;
 
 import java.io.File;
 import java.io.InputStream;
@@ -30,7 +30,7 @@ public class Commands extends Command implements TabExecutor {
 	private final Logger logger;
 
 	public Commands(Logger logger) {
-		super("bungeepluginmanager", "bungeepluginmanager.cmds", "bpm");
+		super("waterfallpluginmanager", "waterfallpluginmanager.cmds", "wpm");
 		this.logger = logger;
 	}
 
